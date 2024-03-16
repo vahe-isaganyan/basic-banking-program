@@ -25,12 +25,20 @@ class BankAccount(
 
     }
 
+    fun acctBalance(): Double {
+        return balance
+
+    }
+
     fun displayTransactionHistory() {
         println("Transaction history for $accountHolder")
         for (transaction in transactionHistory) {
             println(transaction)
         }
 
+        //to return the balance of the account
+
     }
 
 }
+
